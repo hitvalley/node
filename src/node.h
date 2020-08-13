@@ -20,8 +20,12 @@
 // USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #ifndef SRC_NODE_H_
+// #ifndef是if not define的简写
+// https://baike.baidu.com/item/%23ifndef/2835043?fr=aladdin
 #define SRC_NODE_H_
+// 防止头文件被重复引用
 
+// WIN 32 
 #ifdef _WIN32
 # ifndef BUILDING_NODE_EXTENSION
 #  define NODE_EXTERN __declspec(dllexport)
